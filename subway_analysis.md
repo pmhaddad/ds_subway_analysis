@@ -267,7 +267,7 @@ remove(interval_0, discrepancy)
 
 Como é possível ver pelos números de linhas exibidos acima, **a remoção dos dados repetidos deu certo!**
 
-A próxima questão que precisa ser endereçada é: apesar do *scraper* estar programado para fazer a coleta de dados a cada 6 minutos, a base de dados apresenta alguns intervalos onde dados não foram coletados (por exemplo porque o site da **Linha Amarela** estava fora do ar). Vejamos se temos dias no intervalo registrado sem dados no banco:
+A próxima questão que precisa ser endereçada é: apesar do *scraper* estar programado para fazer a coleta de dados a cada 6 minutos, a base de dados apresenta alguns intervalos onde dados não foram coletados (por exemplo porque o site da **Linha Amarela** estava fora do ar). Vejamos se temos dias sem dados no banco:
 
 ``` r
 d <- unique(date(subway$date_time))
