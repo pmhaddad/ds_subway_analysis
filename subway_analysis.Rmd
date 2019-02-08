@@ -23,6 +23,8 @@ Aproveitando que o Douglas gentimente disponibilizou no GitHub [um repositório](
 ## Coleta dos dados
 Conforme mencionado, os dados utilizados nesta análise são o resultado de um *scraper* escrito pelo **Douglas Navarro** em Python. Para aqueles que nunca notaram, o [site da concessionária da Linha Amarela](http://www.viaquatro.com.br/) disponibiliza o status do funcionamento de todas as linhas da rede ferroviária da região metropolitana de São Paulo. O *scraper* consulta o site a cada 6 minutos e registra o status de todas as linhas. Os dados são então salvos em planilhas mensais no Google Drive. Para aqueles que queiram mais informações de como funciona o *scraper*, recomendo demais a leitura do post indicado na introdução.
 
+> Os dados usados nesta análise contemplam o período entre maio de 2018 e fevereiro de 2019
+
 O primeiro passo para a obtenção dos dados é então buscá-los na internet. Para isso, usamos as bibliotecas `googledrive` e `gsheet`. Além disso, vamos usar o `dplyr` para unir as diferentes tabelas em um conjunto de dados único:
 ```{r message = FALSE, warning = FALSE}
 library(googledrive)
